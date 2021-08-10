@@ -13,6 +13,6 @@ it('gets the dreams endpoint', async () => {
 
 it('gets the dream show endpoint' , async () => {
     const response = await request.get('/dreams/1');
-    expect(response.status).tobe(200);
+    expect(response.status).toBe(200);
     expect(response.body).toEqual(data[0]);
 });
